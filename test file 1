@@ -1,3 +1,24 @@
 test file
 This is the fourth (NOT) line
 and a third
+
+now I'm going to add another line
+
+and some code:
+  <<
+		{
+		\once \override Stem #'length = #9.5
+      	<dis b'\harmonic>4
+    	}
+    \\
+    	{
+      	\once \override Stem #'stencil = ##f
+      	\once \override Flag #'stencil = ##f
+      	\teeny
+      	\once \override ParenthesesItem #'padding = #0.7
+      	\once \override ParenthesesItem #'font-size = #2
+		\once \override ParenthesesItem #'extra-offset = #'(-0.45 . 0)
+		\once \override NoteColumn #'force-hshift = #0.4
+      	\parenthesize fis''
+    	}
+	>>
